@@ -1,4 +1,4 @@
-﻿namespace Ice_Hot_Tea.Entity.Store.Product.Language
+﻿namespace Ice_Hot_Tea.Entity.Store.Product.IntermediateTables
 {
     public class LanguageInGame
     {

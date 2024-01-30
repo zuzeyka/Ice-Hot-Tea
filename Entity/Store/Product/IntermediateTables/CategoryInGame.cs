@@ -1,6 +1,6 @@
-﻿namespace Ice_Hot_Tea.Entity.Store.Product.Categories
+﻿namespace Ice_Hot_Tea.Entity.Store.Product.IntermediateTables
 {
-    public class CategoryForGame
+    public class CategoryInGame
     {
         public string id { get; set; }
         public string gameId { get; set; }
@@ -8,9 +8,5 @@
 
         public DateTime createdAt { get; set; }
         public DateTime? deleteAt { get; set; }
-
-        public CategoryForGame()
-        {
-        }
     }
 }

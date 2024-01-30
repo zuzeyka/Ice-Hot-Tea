@@ -1,14 +1,10 @@
-﻿namespace Ice_Hot_Tea.Entity.Store.Product
+﻿namespace Ice_Hot_Tea.Entity.Abstract
 {
-    public class Publisher
+    public abstract class Category
     {
         public string id { get; set; }
         public string name { get; set; }
-        public string? urlForNewsPage { get; set; }
         public DateTime createdAt { get; set; }
         public DateTime? deleteAt { get; set; }
-        public Publisher()
-        {
-        }
     }
 }
