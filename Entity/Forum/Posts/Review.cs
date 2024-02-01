@@ -1,13 +1,13 @@
-﻿namespace Ice_Hot_Tea.Entity.Abstract
+﻿using Ice_Hot_Tea.Entity.Abstract;
+
+namespace Ice_Hot_Tea.Entity.Forum.Posts
 {
-    public abstract class Review
+    public class Review : Post
     {
         public bool isPositive { get; set; }
         public string authorId { get; set; }
         public string description { get; set; }
         public int counterOfPositiveMarks { get; set; }
         public int counterOfNegativeMarks { get; set; }
-        public DateTime createdAt { get; set; }
-        public DateTime? deleteAt { get; set; }
     }
 }

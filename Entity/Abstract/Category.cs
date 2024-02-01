@@ -1,10 +1,8 @@
 ﻿namespace Ice_Hot_Tea.Entity.Abstract
 {
-    public abstract class Category
+    public abstract class Category : BDRecord
     {
-        public string id { get; set; }
         public string name { get; set; }
-        public DateTime createdAt { get; set; }
-        public DateTime? deleteAt { get; set; }
+        public string attachedItemId { get; set; }
     }
 }

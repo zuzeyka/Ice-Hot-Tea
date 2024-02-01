@@ -1,15 +1,13 @@
-﻿namespace Ice_Hot_Tea.Entity.Store.Product.IntermediateTables
+﻿using Ice_Hot_Tea.Entity.Abstract;
+
+namespace Ice_Hot_Tea.BD.IntermediateTables
 {
-    public class LanguageInGame
+    public class GameByLanguage : BDRecord
     {
-        public string id { get; set; }
         public string gameId { get; set; }
         public string languageId { get; set; }
         public bool IsSubtitles { get; set; } = false;
         public bool IsAudio { get; set; } = false;
         public bool IsInterface { get; set; } = false;
-
-        public DateTime createdAt { get; set; }
-        public DateTime? deleteAt { get; set; }
     }
 }
