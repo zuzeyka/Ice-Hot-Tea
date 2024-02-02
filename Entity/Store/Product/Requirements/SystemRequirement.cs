@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.Data.Entitty
+﻿namespace Ice_Hot_Tea.Data.Entity
 {
     public class SystemRequirement
     {

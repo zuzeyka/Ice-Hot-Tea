@@ -1,4 +1,4 @@
-﻿namespace Ice_Hot_Tea.Data.Entitty.Shop
+﻿namespace Ice_Hot_Tea.Data.Entity
 {
     public class Categories
     {
@@ -8,4 +8,5 @@
         protected DateTime createdAt { get; set; }
         protected DateTime? deleteAt { get; set; }
     }
+
 }

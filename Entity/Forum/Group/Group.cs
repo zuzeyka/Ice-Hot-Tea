@@ -1,6 +1,6 @@
-﻿using WebApplication1.Data.Entitty.Profile;
+﻿using Ice_Hot_Tea.Data.Entity.Profile;
 
-namespace WebApplication1.Data.Entitty.Community
+namespace Ice_Hot_Tea.Data.Entity.Community
 {
     public class Group
     {

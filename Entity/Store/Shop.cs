@@ -1,4 +1,5 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
+﻿using Ice_Hot_Tea.Data.Entity;
+using Ice_Hot_Tea.Entity.Abstract;
 using Ice_Hot_Tea.Entity.Store.Product.Creators;
 
 namespace Ice_Hot_Tea.Entity.Store

@@ -1,4 +1,4 @@
-﻿namespace Ice_Hot_Tea.Data.Entitty
+﻿namespace Ice_Hot_Tea.Data.Entity
 {
     public class MaximumSystemRequirement : SystemRequirement
     {

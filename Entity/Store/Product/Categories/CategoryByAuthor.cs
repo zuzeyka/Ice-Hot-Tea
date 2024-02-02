@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Server.IIS.Core;
-
-namespace Ice_Hot_Tea.Data.Entitty.Shop
+﻿
+namespace Ice_Hot_Tea.Data.Entity
 {
     public class CategoryByAuthor : Categories
     {

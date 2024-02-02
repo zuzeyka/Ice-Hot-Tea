@@ -1,6 +1,6 @@
-﻿using Ice_Hot_Tea.Data.Entitty.Profile;
+﻿using Ice_Hot_Tea.Data.Entity.Profile;
 
-namespace Ice_Hot_Tea.Data.Entitty.Community.GameGroup
+namespace Ice_Hot_Tea.Data.Entity.Community.GameGroup
 {
     public class GamePosts
     {

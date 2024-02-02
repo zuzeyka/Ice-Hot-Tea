@@ -1,6 +1,6 @@
-﻿using WebApplication1.Data.Entitty.Profile;
+﻿using Ice_Hot_Tea.Data.Entity.Profile;
 
-namespace WebApplication1.Data.Entitty.Community.GameGroup
+namespace Ice_Hot_Tea.Data.Entity.Community.GameGroup
 {
     public class GameTopic
     {
