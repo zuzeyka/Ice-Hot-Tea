@@ -2,7 +2,7 @@
 
 namespace Ice_Hot_Tea.Entity.Store.Product.Creators
 {
-    public class Developer : Profile
+    public class Developer : Abstract.Profile
     {
         public String id { get; set; }
         public String name { get; set; }
