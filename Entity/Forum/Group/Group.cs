@@ -13,5 +13,17 @@ namespace Ice_Hot_Tea.Data.Entity.Community
 
         public DateTime createdAt { get; set; }
         public DateTime? deletedAt { get; set; }
+
+        public Group(String id, String name, String description, List<User> users, List<Topic> topics, List<GroupComment> comments, DateTime createdAt, DateTime? deletedAt)
+        {
+            this.id = id;
+            this.name = name;
+            this.description = description;
+            this.users = users;
+            this.topics = topics;
+            this.comments = comments;
+            this.createdAt = createdAt;
+            this.deletedAt = deletedAt;
+        }
     }
 }
