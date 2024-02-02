@@ -2,17 +2,17 @@
 {
     public abstract class Game : BDRecord
     {
-        public string name { get; set; }
+        public String name { get; set; }
         public float price { get; set; }
         public int discount { get; set; }
-        public string previeImage { get; set; }
-        public List<string> gameImages { get; set; }
+        public String previeImage { get; set; }
+        public List<String> gameImages { get; set; }
         public DateTime dateOfRelease { get; set; }
-        public string developerId { get; set; }
-        public string publisherId { get; set; }
-        public List<string> categoriesId { get; set; }
-        public List<string> languagesId { get; set; }
-        public List<string> systemRequirementsId { get; set; }
-        public string urlForContent { get; set; }
+        public String developerId { get; set; }
+        public String publisherId { get; set; }
+        public List<String> categoriesId { get; set; }
+        public List<String> languagesId { get; set; }
+        public List<String> systemRequirementsId { get; set; }
+        public String urlForContent { get; set; }
     }
 }

@@ -1,14 +1,15 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
-
-namespace Ice_Hot_Tea.Entity.Store.Product.Requirements
+﻿namespace WebApplication1.Data.Entitty
 {
-    public abstract class SystemRequirement : BDRecord
+    public class SystemRequirement
     {
-        protected string gameId { get; set; }
-        protected string? OS { get; set; }
-        protected string? CPU { get; set; }
-        protected string? RAM { get; set; }
-        protected string? GPU { get; set; }
-        protected string freeDiskSpace { get; set; }
+        protected String id { get; set; }
+        protected String gameId { get; set; }
+        protected String OS { get; set; }
+        protected String processor { get; set; }
+        protected String RAM { get; set; }
+        protected String video { get; set; }
+        protected String freeDiskSpace { get; set; }
+        protected DateTime createdAt { get; set; }
+        protected DateTime? deleteAt { get; set; }
     }
 }

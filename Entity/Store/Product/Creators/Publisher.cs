@@ -1,10 +1,18 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
-
-namespace Ice_Hot_Tea.Entity.Store.Product.Creators
+﻿namespace Ice_Hot_Tea.Data.Entitty
 {
-    public class Publisher : Profile
+    public class Publisher
     {
-        public List<News> news { get; set; }
-        public List<Game> games { get; set; }
+        public String id { get; set; }
+        public String name { get; set; }
+        public String? urlForNewsPage { get; set; }
+        public DateTime createdAt { get; set; }
+        public DateTime? deleteAt { get; set; }
+        public Publisher(String id, String name, String? urlForNewsPage, DateTime createdAt)
+        {
+            this.id = id;
+            this.name = name;
+            this.urlForNewsPage = urlForNewsPage;
+            this.createdAt = createdAt;
+        }
     }
 }

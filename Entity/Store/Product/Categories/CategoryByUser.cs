@@ -1,8 +1,13 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
-
-namespace Ice_Hot_Tea.Entity.Store.Product.Categories
+﻿namespace WebApplication1.Data.Entitty
 {
-    public class CategoryByUser : Category
+    public class CategoryByUser : Categories
     {
+        public CategoryByUser(String id, String name, String description, DateTime createdAt)
+        {
+            this.id = id;
+            this.name = name;
+            this.description = description;
+            this.createdAt = createdAt;
+        }
     }
 }

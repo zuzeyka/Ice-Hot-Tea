@@ -1,9 +1,16 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
-
-namespace Ice_Hot_Tea.Entity.Store.Product.Language
+﻿namespace Ice_Hot_Tea.Data.Entitty
 {
-    public class Language : BDRecord
+    public class Language
     {
-        public string name { get; set; }
+        public String id { get; set; }
+        public String name { get; set; }
+        public DateTime createdAt { get; set; }
+        public DateTime? deleteAt { get; set; }
+        public Language(String id, String name, DateTime createdAt)
+        {
+            this.id = id;
+            this.name = name;
+            this.createdAt = createdAt;
+        }
     }
 }
