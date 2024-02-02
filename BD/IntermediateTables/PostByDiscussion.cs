@@ -2,7 +2,7 @@
 
 namespace Ice_Hot_Tea.BD.IntermediateTables
 {
-    public class PostByDiscussion : BDRecord
+    public class PostByDiscussion : DBRecord
     {
         public string postId { get; set; }
         public string discussionId { get; set; }

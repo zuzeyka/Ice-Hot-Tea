@@ -2,7 +2,7 @@
 
 namespace Ice_Hot_Tea.BD.IntermediateTables
 {
-    public class GameByDeveloper : BDRecord
+    public class GameByDeveloper : DBRecord
     {
         public string gameId { get; set; }
         public string developerId { get; set; }

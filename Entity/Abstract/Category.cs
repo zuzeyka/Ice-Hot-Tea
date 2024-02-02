@@ -1,6 +1,6 @@
 ﻿namespace Ice_Hot_Tea.Entity.Abstract
 {
-    public abstract class Category : BDRecord
+    public abstract class Category : DBRecord
     {
         protected String id { get; set; }
         protected String attachedId { get; set; }
