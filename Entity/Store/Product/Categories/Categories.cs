@@ -1,12 +1,12 @@
-﻿namespace Ice_Hot_Tea.Data.Entity
+﻿using Ice_Hot_Tea.Entity.Abstract;
+
+namespace Ice_Hot_Tea.Data.Entity
 {
-    public class Categories
+    public class Categories : DBRecord
     {
-        protected String id { get; set; }
         protected String name { get; set; }
         protected String description { get; set; }
-        protected DateTime createdAt { get; set; }
-        protected DateTime? deleteAt { get; set; }
+
     }
 
 }

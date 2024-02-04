@@ -1,6 +1,6 @@
 ﻿namespace Ice_Hot_Tea.Entity.Abstract
 {
-    public abstract class Author : BDRecord
+    public abstract class Author : DBRecord
     {
         public int subscribersCount { get; set; }
     }

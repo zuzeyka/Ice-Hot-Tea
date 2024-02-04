@@ -1,13 +1,11 @@
-﻿namespace Ice_Hot_Tea.Data.Entity.Community.GameGroup
+﻿using Ice_Hot_Tea.Entity.Abstract;
+
+namespace Ice_Hot_Tea.Data.Entity.Community.GameGroup
 {
-    public class GameComment
+    public class GameComment : DBRecord
     {
-        public String id { get; set; }
         public String gamePostId { get; set; }
         public String content { get; set; }
-
-        public DateTime createdAt { get; set; }
-        public DateTime? deletedAt { get; set; }
 
         public GameComment(String id, String gamePostId, String content, DateTime createdAt)
         {

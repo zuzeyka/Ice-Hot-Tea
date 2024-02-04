@@ -1,13 +1,12 @@
-﻿namespace Ice_Hot_Tea.Data.Entity.Community.GameGroup
+﻿using Ice_Hot_Tea.Entity.Abstract;
+
+namespace Ice_Hot_Tea.Data.Entity.Community.GameGroup
 {
-    public class GameNews
+    public class GameNews : DBRecord
     {
-        public String id { get; set; }
         public String gameId { get; set; }
         public String title { get; set; }
         public String content { get; set; }
-        public DateTime createdAt { get; set; }
-        public DateTime? deletedAt { get; set; }
 
         public GameNews(String id, String gameId, String title, String content, DateTime createdAt)
         {
