@@ -19,6 +19,7 @@
             this.backgroundImage = backgroundImage;
             this.description = description;
             this.urlForNewsPage = urlForNewsPage;
+            this.showcases = showcases;
             this.createdAt = createdAt;
             this.deleteAt = deleteAt;
         }
