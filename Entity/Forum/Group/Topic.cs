@@ -1,7 +1,7 @@
-﻿using Ice_Hot_Tea.Data.Entity.Profile;
-using Ice_Hot_Tea.Entity.Abstract;
+﻿using Slush.Data.Entity.Profile;
+using Slush.Entity.Abstract;
 
-namespace Ice_Hot_Tea.Data.Entity.Community
+namespace Slush.Data.Entity.Community
 {
     public class Topic : Category
     {
@@ -10,7 +10,13 @@ namespace Ice_Hot_Tea.Data.Entity.Community
         public User author { get; set; }
         public List<Post> posts { get; set; }
 
-        public Topic(String id, String name, String description, String attachedId, DateTime createdAt, User author, List<Post> posts)
+        public Topic(String id,
+                     String name,
+                     String description,
+                     String attachedId,
+                     DateTime createdAt,
+                     User author,
+                     List<Post> posts)
         {
             this.id = id;
             this.name = name;

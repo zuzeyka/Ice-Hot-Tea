@@ -1,8 +1,8 @@
-using Ice_Hot_Tea.Models;
+using Slush.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Ice_Hot_Tea.Controllers
+namespace Slush.Controllers
 {
     public class HomeController : Controller
     {

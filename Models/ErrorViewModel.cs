@@ -1,4 +1,4 @@
-namespace Ice_Hot_Tea.Models
+namespace Slush.Models
 {
     public class ErrorViewModel
     {

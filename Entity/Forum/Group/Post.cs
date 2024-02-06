@@ -1,12 +1,20 @@
-﻿using Ice_Hot_Tea.Data.Entity.Profile;
+﻿using Slush.Data.Entity.Profile;
 
-namespace Ice_Hot_Tea.Data.Entity.Community
+namespace Slush.Data.Entity.Community
 {
-    public class Post : Ice_Hot_Tea.Entity.Abstract.Post
+    public class Post : Slush.Entity.Abstract.Post
     {
         public String content { get; set; }
 
-        public Post(String id, String authorId, String? description, String gameId, String content, String discussionId, DateTime createdAt, int likesCount, int dislikesCount)
+        public Post(String id,
+                    String authorId,
+                    String? description,
+                    String gameId,
+                    String content,
+                    String discussionId,
+                    DateTime createdAt,
+                    int likesCount,
+                    int dislikesCount)
         {
             this.id = id;
             this.authorId = authorId;

@@ -1,17 +1,24 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
-using Ice_Hot_Tea.Entity.Store.Product;
+﻿using Slush.Data.Entity.Profile;
+using Slush.Entity.Abstract;
+using Slush.Entity.Store.Product;
 
-namespace Ice_Hot_Tea.Data.Entity.Community.GameGroup
+namespace Slush.Data.Entity.Community.GameGroup
 {
     public class GameGroup : DBRecord
     {
         public GameInShop game { get; set; }
         public List<GameNews> news { get; set; }
-        public List<GameVideo> videos { get; set; }
-        public List<GameScreenshot> screenshots { get; set; }
+        public List<Video> videos { get; set; }
+        public List<Screenshot> screenshots { get; set; }
         public List<GameTopic> topics { get; set; }
 
-        public GameGroup(String id, GameInShop game, List<GameNews> news, List<GameVideo> videos, List<GameScreenshot> screenshots, List<GameTopic> topics, DateTime createdAt)
+        public GameGroup(String id,
+                         GameInShop game,
+                         List<GameNews> news,
+                         List<GameVideo> videos,
+                         List<GameScreenshot> screenshots,
+                         List<GameTopic> topics,
+                         DateTime createdAt)
         {
             this.id = id;
             this.game = game;

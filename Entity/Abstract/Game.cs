@@ -1,4 +1,4 @@
-﻿namespace Ice_Hot_Tea.Entity.Abstract
+﻿namespace Slush.Entity.Abstract
 {
     public abstract class Game : DBRecord
     {

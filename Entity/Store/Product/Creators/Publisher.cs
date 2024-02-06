@@ -1,6 +1,6 @@
-﻿namespace Ice_Hot_Tea.Data.Entity
+﻿namespace Slush.Entity.Store.Product.Creators
 {
-    public class Publisher
+    public class Publisher : Abstract.Profile
     {
         public String id { get; set; }
         public String name { get; set; }

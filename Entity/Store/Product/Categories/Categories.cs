@@ -1,6 +1,6 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
+﻿using Slush.Entity.Abstract;
 
-namespace Ice_Hot_Tea.Data.Entity
+namespace Slush.Data.Entity
 {
     public class Categories : DBRecord
     {

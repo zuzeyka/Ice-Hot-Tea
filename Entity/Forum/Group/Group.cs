@@ -1,7 +1,7 @@
-﻿using Ice_Hot_Tea.Data.Entity.Profile;
-using Ice_Hot_Tea.Entity.Abstract;
+﻿using Slush.Data.Entity.Profile;
+using Slush.Entity.Abstract;
 
-namespace Ice_Hot_Tea.Data.Entity.Community
+namespace Slush.Data.Entity.Community
 {
     public class Group : Category
     {
@@ -10,7 +10,14 @@ namespace Ice_Hot_Tea.Data.Entity.Community
         public List<GroupComment> comments { get; set; }
 
 
-        public Group(String id, String name, String description, List<User> users, List<Topic> topics, List<GroupComment> comments, DateTime createdAt, DateTime? deleteAt)
+        public Group(String id,
+                     String name,
+                     String description,
+                     List<User> users,
+                     List<Topic> topics,
+                     List<GroupComment> comments,
+                     DateTime createdAt,
+                     DateTime? deleteAt)
         {
             this.id = id;
             this.name = name;

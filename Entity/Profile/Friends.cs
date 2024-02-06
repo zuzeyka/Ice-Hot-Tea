@@ -1,4 +1,4 @@
-﻿namespace Ice_Hot_Tea.Entity.Profile
+﻿namespace Slush.Entity.Profile
 {
     public class Friends
     {
@@ -6,7 +6,9 @@
         public String userId { get; set; }
         public String friendId { get; set; }
 
-        public Friends(String id, String userId, String friendId)
+        public Friends(String id,
+                       String userId,
+                       String friendId)
         {
             this.id = id;
             this.userId = userId;

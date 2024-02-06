@@ -1,7 +1,7 @@
-﻿using Ice_Hot_Tea.Data.Entity.Profile;
-using Ice_Hot_Tea.Entity.Abstract;
+﻿using Slush.Data.Entity.Profile;
+using Slush.Entity.Abstract;
 
-namespace Ice_Hot_Tea.Data.Entity.Community
+namespace Slush.Data.Entity.Community
 {
     public class GroupComment : DBRecord
     {
@@ -9,7 +9,11 @@ namespace Ice_Hot_Tea.Data.Entity.Community
         public String content { get; set; }
 
 
-        public GroupComment(String id, String content, DateTime createdAt, String userId, String groupId)
+        public GroupComment(String id,
+                            String content,
+                            DateTime createdAt,
+                            String userId,
+                            String groupId)
         {
             this.id = id;
             this.content = content;
