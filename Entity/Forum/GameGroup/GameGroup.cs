@@ -15,8 +15,8 @@ namespace Slush.Data.Entity.Community.GameGroup
         public GameGroup(String id,
                          GameInShop game,
                          List<GameNews> news,
-                         List<GameVideo> videos,
-                         List<GameScreenshot> screenshots,
+                         List<Video> videos,
+                         List<Screenshot> screenshots,
                          List<GameTopic> topics,
                          DateTime createdAt)
         {
