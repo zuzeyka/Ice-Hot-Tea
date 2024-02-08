@@ -1,25 +1,27 @@
-﻿using WebApplication1.Data.Entitty.Profile;
+﻿using Slush.Data.Entity.Profile;
+using Slush.Entity.Abstract;
 
-namespace WebApplication1.Data.Entitty.Community
+namespace Slush.Data.Entity.Community
 {
-    public class Topic
+    public class Topic : Category
     {
-        public String id {  get; set; }
-        public String name { get; set; }
-        public String description { get; set; }
-        public Group group { get; set; }
+        public String attachedId { get; set; }
 
         public User author { get; set; }
         public List<Post> posts { get; set; }
-        public DateTime createdAt { get; set; }
-        public DateTime? deletedAt { get; set; }
 
-        public Topic(String id, String name, String description, Group group, DateTime createdAt, User author, List<Post> posts)
+        public Topic(String id,
+                     String name,
+                     String description,
+                     String attachedId,
+                     DateTime createdAt,
+                     User author,
+                     List<Post> posts)
         {
             this.id = id;
             this.name = name;
             this.description = description;
-            this.group = group;
+            this.attachedId = attachedId;
             this.createdAt = createdAt;
             this.author = author;
             this.posts = posts;

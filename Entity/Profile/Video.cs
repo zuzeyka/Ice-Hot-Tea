@@ -1,32 +1,31 @@
-﻿namespace Slush.Data.Entity.Community.GameGroup
-{
-    public class GameGuide : Slush.Entity.Abstract.Post
-    {
-        public String gameGroupId { get; set; }
-        public String content {  get; set; }
+﻿using Slush.Entity.Abstract;
 
-        public GameGuide(String id,
+namespace Slush.Data.Entity.Profile
+{
+    public class Video : Post
+    {
+        public String videoUrl { get; set; }
+
+        public Video(String id,
                          String authorId,
                          String gameId,
                          String discussionId,
                          int dislikesCount,
                          int likesCount,
                          String? description,
-                         String gameGroupId,
+                         String videoUrl,
                          String title,
-                         String content,
                          DateTime createdAt)
         {
             this.id = id;
             this.likesCount = likesCount;
             this.gameId = gameId;
             this.authorId = authorId;
+            this.videoUrl = videoUrl;
             this.discussionId = discussionId;
             this.dislikesCount = dislikesCount;
             this.description = description;
-            this.gameGroupId = gameGroupId;
             this.title = title;
-            this.content = content;
             this.createdAt = createdAt;
         }
     }

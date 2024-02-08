@@ -1,8 +1,8 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
+﻿using Slush.Entity.Abstract;
 
-namespace Ice_Hot_Tea.BD.IntermediateTables
+namespace Slush.BD.IntermediateTables
 {
-    public class PostByAythor : BDRecord
+    public class PostByAythor : DBRecord
     {
         public string postId { get; set; }
         public string authorId { get; set; }

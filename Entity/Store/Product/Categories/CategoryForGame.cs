@@ -1,15 +1,17 @@
-﻿namespace Ice_Hot_Tea.Data.Entitty
+﻿using Slush.Entity.Abstract;
+
+namespace Slush.Data.Entity
 {
-    public class CategoryForGame
+    public class CategoryForGame : DBRecord
     {
-        public String id { get; set; }
         public String gameId { get; set; }
         public String categoryId { get; set; }
 
-        public DateTime createdAt { get; set; }
-        public DateTime? deleteAt { get; set; }
 
-        public CategoryForGame(String id, String gameId, String categoryId, DateTime createdAt)
+        public CategoryForGame(String id,
+                               String gameId,
+                               String categoryId,
+                               DateTime createdAt)
         {
             this.id = id;
             this.gameId = gameId;

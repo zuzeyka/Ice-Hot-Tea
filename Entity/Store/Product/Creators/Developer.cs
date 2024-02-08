@@ -1,19 +1,25 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
-
-namespace Ice_Hot_Tea.Entity.Store.Product.Creators
+﻿namespace Slush.Entity.Store.Product.Creators
 {
-    public class Developer : Profile
+    public class Developer : Abstract.Profile
     {
-        public String id { get; set; }
-        public String name { get; set; }
         public String? urlForNewsPage { get; set; }
-        public DateTime createdAt { get; set; }
-        public DateTime? deleteAt { get; set; }
-        public Developer(String id, String name, String? urlForNewsPage, DateTime createdAt, DateTime? deleteAt)
+        public Developer(String id,
+                         String description,
+                         String avatar,
+                         String backgroundImage,
+                         String name,
+                         String? urlForNewsPage,
+                         DateTime createdAt,
+                         List<object> showcases,
+                         DateTime? deleteAt)
         {
             this.id = id;
             this.name = name;
+            this.avatar = avatar;
+            this.backgroundImage = backgroundImage;
+            this.description = description;
             this.urlForNewsPage = urlForNewsPage;
+            this.showcases = showcases;
             this.createdAt = createdAt;
             this.deleteAt = deleteAt;
         }

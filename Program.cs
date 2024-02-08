@@ -1,4 +1,4 @@
-using Ice_Hot_Tea.Data;
+using Slush.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 

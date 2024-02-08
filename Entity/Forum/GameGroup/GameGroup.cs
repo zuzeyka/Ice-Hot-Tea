@@ -1,18 +1,24 @@
-﻿namespace WebApplication1.Data.Entitty.Community.GameGroup
+﻿using Slush.Data.Entity.Profile;
+using Slush.Entity.Abstract;
+using Slush.Entity.Store.Product;
+
+namespace Slush.Data.Entity.Community.GameGroup
 {
-    public class GameGroup
+    public class GameGroup : DBRecord
     {
-        public String id { get; set; }
-        public Game game { get; set; }
+        public GameInShop game { get; set; }
         public List<GameNews> news { get; set; }
-        public List<GameVideo> videos { get; set; }
-        public List<GameScreenshot> screenshots { get; set; }
+        public List<Video> videos { get; set; }
+        public List<Screenshot> screenshots { get; set; }
         public List<GameTopic> topics { get; set; }
 
-        public DateTime createdAt { get; set; }
-        public DateTime? deletedAt { get; set; }
-
-        public GameGroup(String id, Game game, List<GameNews> news, List<GameVideo> videos, List<GameScreenshot> screenshots, List<GameTopic> topics, DateTime createdAt)
+        public GameGroup(String id,
+                         GameInShop game,
+                         List<GameNews> news,
+                         List<GameVideo> videos,
+                         List<GameScreenshot> screenshots,
+                         List<GameTopic> topics,
+                         DateTime createdAt)
         {
             this.id = id;
             this.game = game;

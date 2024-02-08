@@ -1,18 +1,28 @@
-﻿namespace WebApplication1.Data.Entitty.Community.GameGroup
+﻿namespace Slush.Data.Entity.Community.GameGroup
 {
-    public class GameNews
+    public class GameNews : Slush.Entity.Abstract.Post
     {
-        public String id { get; set; }
-        public String gameId { get; set; }
-        public String title { get; set; }
         public String content { get; set; }
-        public DateTime createdAt { get; set; }
-        public DateTime? deletedAt { get; set; }
 
-        public GameNews(String id, String gameId, String title, String content, DateTime createdAt)
+        public GameNews(String id,
+                         String authorId,
+                         String gameId,
+                         String discussionId,
+                         int dislikesCount,
+                         int likesCount,
+                         String? description,
+                         String gameGroupId,
+                         String title,
+                         String content,
+                         DateTime createdAt)
         {
             this.id = id;
+            this.likesCount = likesCount;
             this.gameId = gameId;
+            this.authorId = authorId;
+            this.discussionId = discussionId;
+            this.dislikesCount = dislikesCount;
+            this.description = description;
             this.title = title;
             this.content = content;
             this.createdAt = createdAt;

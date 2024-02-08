@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Server.IIS.Core;
-
-namespace Ice_Hot_Tea.Data.Entitty.Shop
+﻿
+namespace Slush.Data.Entity
 {
     public class CategoryByAuthor : Categories
     {
         public String image { get; set; }
-        public CategoryByAuthor(String id, String name, String description, String image, DateTime createdAt)
+        public CategoryByAuthor(String id,
+                                String name,
+                                String description,
+                                String image,
+                                DateTime createdAt)
         {
             this.id = id;
             this.name = name;

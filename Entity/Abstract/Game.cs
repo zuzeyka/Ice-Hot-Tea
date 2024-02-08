@@ -1,6 +1,6 @@
-﻿namespace Ice_Hot_Tea.Entity.Abstract
+﻿namespace Slush.Entity.Abstract
 {
-    public abstract class Game : BDRecord
+    public abstract class Game : DBRecord
     {
         public String name { get; set; }
         public float price { get; set; }

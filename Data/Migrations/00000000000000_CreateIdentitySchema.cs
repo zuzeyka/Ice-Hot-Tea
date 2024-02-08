@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 
-namespace Ice_Hot_Tea.Data.Migrations
+namespace Slush.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {

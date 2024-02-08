@@ -1,6 +1,6 @@
-﻿namespace Ice_Hot_Tea.Entity.Abstract
+﻿namespace Slush.Entity.Abstract
 {
-    public class BDRecord
+    public abstract class DBRecord
     {
         public string id { get; set; }
         public DateTime createdAt { get; set; }

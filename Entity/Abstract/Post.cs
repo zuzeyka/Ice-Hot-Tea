@@ -1,6 +1,6 @@
-﻿namespace Ice_Hot_Tea.Entity.Abstract
+﻿namespace Slush.Entity.Abstract
 {
-    public abstract class Post : BDRecord
+    public abstract class Post : DBRecord
     {
         public string title { get; set; }
         public string? description { get; set; }

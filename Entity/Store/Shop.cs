@@ -1,7 +1,8 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
-using Ice_Hot_Tea.Entity.Store.Product.Creators;
+﻿using Slush.Data.Entity;
+using Slush.Entity.Abstract;
+using Slush.Entity.Store.Product.Creators;
 
-namespace Ice_Hot_Tea.Entity.Store
+namespace Slush.Entity.Store
 {
     public class Shop
     {

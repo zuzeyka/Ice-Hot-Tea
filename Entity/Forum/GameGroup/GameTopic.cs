@@ -1,23 +1,23 @@
-﻿using WebApplication1.Data.Entitty.Profile;
+﻿using Slush.Data.Entity.Profile;
+using Slush.Entity.Abstract;
 
-namespace WebApplication1.Data.Entitty.Community.GameGroup
+namespace Slush.Data.Entity.Community.GameGroup
 {
-    public class GameTopic
+    public class GameTopic : Category
     {
-        public String id { get; set; }
-        public String name { get; set; }
-        public String description { get; set; }
-        public String gameGroupId { get; set; }
         public List<GamePosts> posts { get; set; }
-        public DateTime createdAt { get; set; }
-        public DateTime? deletedAt { get; set; }
 
-        public GameTopic(string id, string name, string description, string gameGroupId, List<GamePosts> posts, DateTime createdAt)
+        public GameTopic(string id,
+                         string name,
+                         string description,
+                         string attachedId,
+                         List<GamePosts> posts,
+                         DateTime createdAt)
         {
             this.id = id;
             this.name = name;
             this.description = description;
-            this.gameGroupId = gameGroupId;
+            this.attachedId = attachedId;
             this.posts = posts;
             this.createdAt = createdAt;
         }

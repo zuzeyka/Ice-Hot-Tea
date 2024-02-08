@@ -1,8 +1,8 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
+﻿using Slush.Entity.Abstract;
 
-namespace Ice_Hot_Tea.BD.IntermediateTables
+namespace Slush.BD.IntermediateTables
 {
-    public class GameByRequirements : BDRecord
+    public class GameByRequirements : DBRecord
     {
         public string recomendedRequirementsId { get; set; }
         public string minimalRequirementsId { get; set; }

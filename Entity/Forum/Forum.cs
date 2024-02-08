@@ -1,6 +1,6 @@
-﻿using Ice_Hot_Tea.Entity.Abstract;
+﻿using Slush.Entity.Abstract;
 
-namespace Ice_Hot_Tea.Entity.Forum
+namespace Slush.Entity.Forum
 {
     public class Forum
     {

@@ -1,15 +1,17 @@
-﻿namespace WebApplication1.Data.Entitty.Community.GameGroup
+﻿using Slush.Entity.Abstract;
+
+namespace Slush.Data.Entity.Community.GameGroup
 {
-    public class GameComment
+    public class GameComment : DBRecord
     {
-        public String id { get; set; }
         public String gamePostId { get; set; }
         public String content { get; set; }
+        public Author Author { get; set; }
 
-        public DateTime createdAt { get; set; }
-        public DateTime? deletedAt { get; set; }
-
-        public GameComment(String id, String gamePostId, String content, DateTime createdAt)
+        public GameComment(String id,
+                           String gamePostId,
+                           String content,
+                           DateTime createdAt)
         {
             this.id = id;
             this.gamePostId = gamePostId;

@@ -1,9 +1,15 @@
-﻿namespace Ice_Hot_Tea.Data.Entitty
+﻿namespace Slush.Data.Entity
 {
     public class MaximumSystemRequirement : SystemRequirement
     {
-        public MaximumSystemRequirement(String id, String gameId, String OS, String processor,
-                                        String RAM, String video, String freeDiskSpace, DateTime createdAt)
+        public MaximumSystemRequirement(String id,
+                                        String gameId,
+                                        String OS,
+                                        String processor,
+                                        String RAM,
+                                        String video,
+                                        String freeDiskSpace,
+                                        DateTime createdAt)
         {
             this.id = id;
             this.gameId = gameId;

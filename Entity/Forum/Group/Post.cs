@@ -1,24 +1,30 @@
-﻿using Ice_Hot_Tea.Data.Entitty.Profile;
+﻿using Slush.Data.Entity.Profile;
 
-namespace Ice_Hot_Tea.Data.Entitty.Community
+namespace Slush.Data.Entity.Community
 {
-    public class Post
+    public class Post : Slush.Entity.Abstract.Post
     {
-        public String id { get; set; }
-        public User author { get; set; }
         public String content { get; set; }
-        public String topicId { get; set; }
 
-        public DateTime createdAt { get; set; }
-        public DateTime? deletedAt { get; set; }
-
-        public Post(String id, User author, String content, String topicId, DateTime createdAt)
+        public Post(String id,
+                    String authorId,
+                    String? description,
+                    String gameId,
+                    String content,
+                    String discussionId,
+                    DateTime createdAt,
+                    int likesCount,
+                    int dislikesCount)
         {
             this.id = id;
-            this.author = author;
+            this.authorId = authorId;
             this.content = content;
-            this.topicId = topicId;
+            this.description = description;
+            this.discussionId = discussionId;
             this.createdAt = createdAt;
+            this.likesCount = likesCount;
+            this.dislikesCount = dislikesCount;
+            this.gameId = gameId;
         }
     }
 }
