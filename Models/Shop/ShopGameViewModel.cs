@@ -1,4 +1,4 @@
-﻿namespace Ice_Hot_Tea.Models.Shop
+﻿namespace Slush.Models.Shop
 {
     public class ShopGameViewModel
     {

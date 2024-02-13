@@ -3,7 +3,9 @@
     public class Publisher : Abstract.Profile
     {
         public String? urlForNewsPage { get; set; }
-        public Publisher(String id,
+
+        public Publisher() { }
+        public Publisher(Guid id,
                          String description,
                          String avatar,
                          String backgroundImage,

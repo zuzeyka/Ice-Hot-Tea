@@ -3,7 +3,9 @@
     public class Developer : Abstract.Profile
     {
         public String? urlForNewsPage { get; set; }
-        public Developer(String id,
+
+        public Developer() { }
+        public Developer(Guid id,
                          String description,
                          String avatar,
                          String backgroundImage,

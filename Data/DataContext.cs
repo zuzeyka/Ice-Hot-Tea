@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MySql.Data.MySqlClient;
 using Slush.Data.Entity.Community.GameGroup;
 using Slush.Data.Entity.Community;
 using Slush.Entity.Profile;
@@ -7,7 +8,7 @@ using Slush.Data.Entity;
 using Slush.Entity.Store.Product.Creators;
 using Slush.Entity.Store.Product;
 
-namespace Ice_Hot_Tea.Data
+namespace Slush.Data
 {
     public class DataContext : DbContext
     {
@@ -52,6 +53,33 @@ namespace Ice_Hot_Tea.Data
         public DataContext(DbContextOptions options) : base(options)
         {
 
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<GameComment>()
+        .HasOne(gc => gc.Author)
+        .WithMany()
+        .HasForeignKey(gc => gc.Author.id);
+
+            modelBuilder.Entity<GameGuide>()
+                .HasOne(gg => gg.gameGroup)
+                .WithMany()
+                .HasForeignKey(gg => gg.gameGroupId);
+
+            modelBuilder.Entity<GameNews>()
+                .HasOne(gn => gn.gameGroup)
+                .WithMany(gg => gg.news)
+                .HasForeignKey(gn => gn.gameGroup.id);
+
+            modelBuilder.Entity<GamePosts>()
+                .HasOne(gp => gp.gameGroup)
+                .WithMany()
+                .HasForeignKey(gp => gp.gameGroup.id);
+
+            modelBuilder.Entity<GameTopic>()
+                .HasMany(gt => gt.posts)
+                .WithOne()
+                .HasForeignKey(gt => gt.gameGroup.id);
         }
     }
 }

@@ -6,7 +6,9 @@ namespace Slush.Data.Entity.Profile
     {
         public String videoUrl { get; set; }
 
-        public Video(String id,
+        public Video() { }
+
+        public Video(Guid id,
                          String authorId,
                          String gameId,
                          String discussionId,

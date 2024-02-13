@@ -4,6 +4,7 @@ namespace Slush.Data.Entity
 {
     public class SystemRequirement : DBRecord
     {
+        public SystemRequirement() { }
         protected String gameId { get; set; }
         protected String OS { get; set; }
         protected String processor { get; set; }

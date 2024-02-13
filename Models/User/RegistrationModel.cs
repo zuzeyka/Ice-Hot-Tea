@@ -1,4 +1,4 @@
-﻿namespace Ice_Hot_Tea.Models.User
+﻿namespace Slush.Models.User
 {
     public class RegistrationModel
     {

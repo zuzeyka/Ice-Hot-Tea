@@ -7,8 +7,9 @@ namespace Slush.Data.Entity
         public String gameId { get; set; }
         public String categoryId { get; set; }
 
+        public CategoryForGame() { }
 
-        public CategoryForGame(String id,
+        public CategoryForGame(Guid id,
                                String gameId,
                                String categoryId,
                                DateTime createdAt)

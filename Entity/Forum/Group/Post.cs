@@ -6,7 +6,9 @@ namespace Slush.Data.Entity.Community
     {
         public String content { get; set; }
 
-        public Post(String id,
+        public Post() { }
+
+        public Post(Guid id,
                     String authorId,
                     String? description,
                     String gameId,

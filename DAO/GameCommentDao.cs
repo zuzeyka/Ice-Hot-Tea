@@ -1,6 +1,6 @@
 ﻿using Slush.Data.Entity.Community.GameGroup;
 
-namespace Ice_Hot_Tea.DAO
+namespace Slush.DAO
 {
     public class GameCommentDao
     {

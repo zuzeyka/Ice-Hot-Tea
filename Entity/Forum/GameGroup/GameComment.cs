@@ -8,7 +8,9 @@ namespace Slush.Data.Entity.Community.GameGroup
         public String content { get; set; }
         public Author Author { get; set; }
 
-        public GameComment(String id,
+        public GameComment() { }
+
+        public GameComment(Guid id,
                            String gamePostId,
                            String content,
                            DateTime createdAt)

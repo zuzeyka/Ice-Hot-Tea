@@ -20,8 +20,10 @@ namespace Slush.Data.Entity.Profile
         public List<Video> videos { get; set; }
         public List<Group> groups { get; set; }
 
+        public User() { }
 
-        public User(String id,
+
+        public User(Guid id,
                     String name,
                     String passwordSalt,
                     String email,

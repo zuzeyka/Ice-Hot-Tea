@@ -7,7 +7,9 @@ namespace Slush.Data.Entity.Community.GameGroup
         public String content { get; set; }
         public List<GameComment> comments { get; set; }
 
-        public GamePosts(String id,
+        public GamePosts() { }
+
+        public GamePosts(Guid id,
                          String authorId,
                          String gameId,
                          String discussionId,
@@ -31,5 +33,7 @@ namespace Slush.Data.Entity.Community.GameGroup
             this.content = content;
             this.createdAt = createdAt;
         }
+
+        public GameGroup gameGroup { get; set; } = null!;
     }
 }

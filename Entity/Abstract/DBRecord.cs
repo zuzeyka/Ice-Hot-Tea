@@ -2,7 +2,7 @@
 {
     public abstract class DBRecord
     {
-        public string id { get; set; }
+        public Guid id { get; set; }
         public DateTime createdAt { get; set; }
         public DateTime? deleteAt { get; set; }
     }

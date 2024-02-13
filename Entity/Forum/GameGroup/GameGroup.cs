@@ -12,7 +12,9 @@ namespace Slush.Data.Entity.Community.GameGroup
         public List<Screenshot> screenshots { get; set; }
         public List<GameTopic> topics { get; set; }
 
-        public GameGroup(String id,
+        public GameGroup() { }
+
+        public GameGroup(Guid id,
                          GameInShop game,
                          List<GameNews> news,
                          List<Video> videos,

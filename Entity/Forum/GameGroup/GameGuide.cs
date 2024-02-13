@@ -5,7 +5,9 @@
         public String gameGroupId { get; set; }
         public String content {  get; set; }
 
-        public GameGuide(String id,
+        public GameGuide() { }
+
+        public GameGuide(Guid id,
                          String authorId,
                          String gameId,
                          String discussionId,
@@ -29,5 +31,7 @@
             this.content = content;
             this.createdAt = createdAt;
         }
+
+        public GameGroup gameGroup { get; set; } = null!;
     }
 }

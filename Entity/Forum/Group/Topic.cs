@@ -10,7 +10,9 @@ namespace Slush.Data.Entity.Community
         public User author { get; set; }
         public List<Post> posts { get; set; }
 
-        public Topic(String id,
+        public Topic() { }
+
+        public Topic(Guid id,
                      String name,
                      String description,
                      String attachedId,

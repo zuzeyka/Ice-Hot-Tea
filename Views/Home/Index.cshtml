@@ -5,4 +5,12 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>Введите данные</h1>
+    <form method="post" asp-controller="Home" asp-action="Index">
+        <label for="name">Имя:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="description">Описание:</label><br>
+        <textarea id="description" name="description"></textarea><br><br>
+        <input type="submit" value="Отправить">
+    </form>
 </div>

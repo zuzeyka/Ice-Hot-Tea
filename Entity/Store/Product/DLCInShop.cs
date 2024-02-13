@@ -6,7 +6,8 @@ namespace Slush.Entity.Store.Product
     public class DLCInShop : Game
     {
         public String gameId;
-        public DLCInShop(String id,
+        public DLCInShop() { }
+        public DLCInShop(Guid id,
                          String name,
                          float price,
                          String image,

@@ -2,11 +2,13 @@
 {
     public class Friends
     {
-        public String id { get; set; }
+        public Guid id { get; set; }
         public String userId { get; set; }
         public String friendId { get; set; }
 
-        public Friends(String id,
+        public Friends() { }
+
+        public Friends(Guid id,
                        String userId,
                        String friendId)
         {

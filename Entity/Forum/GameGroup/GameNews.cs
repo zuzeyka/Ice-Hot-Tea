@@ -4,14 +4,15 @@
     {
         public String content { get; set; }
 
-        public GameNews(String id,
+        public GameNews() { }
+
+        public GameNews(Guid id,
                          String authorId,
                          String gameId,
                          String discussionId,
                          int dislikesCount,
                          int likesCount,
                          String? description,
-                         String gameGroupId,
                          String title,
                          String content,
                          DateTime createdAt)
@@ -27,5 +28,7 @@
             this.content = content;
             this.createdAt = createdAt;
         }
+
+        public GameGroup gameGroup { get; set; } = null!;
     }
 }

@@ -4,9 +4,10 @@ namespace Slush.Data.Entity
 {
     public class Categories : DBRecord
     {
-        protected String name { get; set; }
-        protected String description { get; set; }
+        public String name { get; set; }
+        public String description { get; set; }
 
+        public Categories() { }
     }
 
 }

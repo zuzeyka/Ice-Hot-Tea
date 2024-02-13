@@ -4,7 +4,10 @@ namespace Slush.Data.Entity
     public class CategoryByAuthor : Categories
     {
         public String image { get; set; }
-        public CategoryByAuthor(String id,
+
+        public CategoryByAuthor() { }
+
+        public CategoryByAuthor(Guid id,
                                 String name,
                                 String description,
                                 String image,

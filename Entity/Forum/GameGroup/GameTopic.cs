@@ -7,7 +7,9 @@ namespace Slush.Data.Entity.Community.GameGroup
     {
         public List<GamePosts> posts { get; set; }
 
-        public GameTopic(string id,
+        public GameTopic() { }
+
+        public GameTopic(Guid id,
                          string name,
                          string description,
                          string attachedId,

@@ -5,7 +5,8 @@ namespace Slush.Entity.Store.Product
 {
     public class GameInShop : Game
     {
-        public GameInShop(String id,
+        public GameInShop() { }
+        public GameInShop(Guid id,
                           String name,
                           float price,
                           int discount,

@@ -8,8 +8,9 @@ namespace Slush.Data.Entity.Profile
         public User author { get; set; }
         public String content { get; set; }
 
+        public UserComment() { }
 
-        public UserComment(String id,
+        public UserComment(Guid id,
                            User author,
                            String content,
                            DateTime createdAt,

@@ -6,7 +6,8 @@ namespace Slush.Data.Entity.Profile
     {
         public String screenshotUrl { get; set; }
 
-        public Screenshot(String id,
+        public Screenshot() { }
+        public Screenshot(Guid id,
                          String authorId,
                          String gameId,
                          String discussionId,

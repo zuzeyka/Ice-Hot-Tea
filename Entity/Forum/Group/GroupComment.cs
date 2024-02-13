@@ -8,8 +8,8 @@ namespace Slush.Data.Entity.Community
         public String groupId { get; set; }
         public String content { get; set; }
 
-
-        public GroupComment(String id,
+        public GroupComment() { }
+        public GroupComment(Guid id,
                             String content,
                             DateTime createdAt,
                             String userId,

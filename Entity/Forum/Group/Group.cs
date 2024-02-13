@@ -9,8 +9,9 @@ namespace Slush.Data.Entity.Community
         public List<Topic> topics { get; set; }
         public List<GroupComment> comments { get; set; }
 
+        public Group() { }
 
-        public Group(String id,
+        public Group(Guid id,
                      String name,
                      String description,
                      List<User> users,

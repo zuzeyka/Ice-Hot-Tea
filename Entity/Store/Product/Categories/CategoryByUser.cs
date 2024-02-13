@@ -2,7 +2,8 @@
 {
     public class CategoryByUser : Categories
     {
-        public CategoryByUser(String id,
+        public CategoryByUser() { }
+        public CategoryByUser(Guid id,
                               String name,
                               String description,
                               DateTime createdAt)

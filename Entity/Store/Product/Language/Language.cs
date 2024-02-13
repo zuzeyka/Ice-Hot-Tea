@@ -5,7 +5,9 @@ namespace Slush.Data.Entity
     public class Language : DBRecord
     {
         public String name { get; set; }
-        public Language(String id,
+
+        public Language() { }
+        public Language(Guid id,
                         String name,
                         DateTime createdAt)
         {
