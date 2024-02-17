@@ -6,8 +6,7 @@ namespace Slush.Data.Entity
     {
         public String name { get; set; }
 
-        public Language() { }
-        public Language(Guid id,
+        public Language(String id,
                         String name,
                         DateTime createdAt)
         {

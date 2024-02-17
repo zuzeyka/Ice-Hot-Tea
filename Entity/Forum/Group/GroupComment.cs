@@ -7,17 +7,18 @@ namespace Slush.Data.Entity.Community
     {
         public String groupId { get; set; }
         public String content { get; set; }
+        public Guid userId { get; set; }
 
-        public GroupComment() { }
-        public GroupComment(Guid id,
+        public GroupComment(String id,
                             String content,
                             DateTime createdAt,
-                            String userId,
+                            Guid userId,
                             String groupId)
         {
             this.id = id;
             this.content = content;
             this.createdAt = createdAt;
+            this.userId = userId;
             this.groupId = groupId;
         }
     }

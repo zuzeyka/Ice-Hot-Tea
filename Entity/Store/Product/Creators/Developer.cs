@@ -5,7 +5,7 @@
         public String? urlForNewsPage { get; set; }
 
         public Developer() { }
-        public Developer(Guid id,
+        public Developer(String id,
                          String description,
                          String avatar,
                          String backgroundImage,

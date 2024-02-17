@@ -5,11 +5,8 @@ namespace Slush.Data.Entity.Community.GameGroup
     public class GamePosts : Slush.Entity.Abstract.Post
     {
         public String content { get; set; }
-        public List<GameComment> comments { get; set; }
 
-        public GamePosts() { }
-
-        public GamePosts(Guid id,
+        public GamePosts(String id,
                          String authorId,
                          String gameId,
                          String discussionId,
@@ -18,12 +15,10 @@ namespace Slush.Data.Entity.Community.GameGroup
                          String? description,
                          String title,
                          String content,
-                         List<GameComment> comments,
                          DateTime createdAt)
         {
             this.id = id;
             this.likesCount = likesCount;
-            this.comments = comments;
             this.gameId = gameId;
             this.authorId = authorId;
             this.discussionId = discussionId;
@@ -35,5 +30,6 @@ namespace Slush.Data.Entity.Community.GameGroup
         }
 
         public GameGroup gameGroup { get; set; } = null!;
+        public List<GameComment> comments { get; set; } = null!;
     }
 }

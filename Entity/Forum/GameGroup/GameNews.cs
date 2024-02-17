@@ -4,9 +4,7 @@
     {
         public String content { get; set; }
 
-        public GameNews() { }
-
-        public GameNews(Guid id,
+        public GameNews(String id,
                          String authorId,
                          String gameId,
                          String discussionId,

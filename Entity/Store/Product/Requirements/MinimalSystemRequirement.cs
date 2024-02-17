@@ -2,8 +2,7 @@
 {
     public class MinimalSystemRequirement : SystemRequirement
     {
-        public MinimalSystemRequirement() { }
-        public MinimalSystemRequirement(Guid id,
+        public MinimalSystemRequirement(String id,
                                         String gameId,
                                         String OS,
                                         String processor,

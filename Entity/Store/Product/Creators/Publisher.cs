@@ -4,15 +4,13 @@
     {
         public String? urlForNewsPage { get; set; }
 
-        public Publisher() { }
-        public Publisher(Guid id,
+        public Publisher(String id,
                          String description,
                          String avatar,
                          String backgroundImage,
                          String name,
                          String? urlForNewsPage,
                          DateTime createdAt,
-                         List<object> showcases,
                          DateTime? deleteAt)
         {
             this.id = id;
@@ -21,9 +19,10 @@
             this.backgroundImage = backgroundImage;
             this.description = description;
             this.urlForNewsPage = urlForNewsPage;
-            this.showcases = showcases;
             this.createdAt = createdAt;
             this.deleteAt = deleteAt;
         }
+
+        public List<object> showcases { get; set; } = null!;
     }
 }

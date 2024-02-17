@@ -7,26 +7,24 @@ namespace Slush.Data.Entity.Community
     {
         public String attachedId { get; set; }
 
-        public User author { get; set; }
-        public List<Post> posts { get; set; }
+        public Guid authorId { get; set; }
 
-        public Topic() { }
-
-        public Topic(Guid id,
+        public Topic(String id,
                      String name,
                      String description,
                      String attachedId,
                      DateTime createdAt,
-                     User author,
-                     List<Post> posts)
+                     Guid authorId)
         {
             this.id = id;
             this.name = name;
             this.description = description;
             this.attachedId = attachedId;
             this.createdAt = createdAt;
-            this.author = author;
-            this.posts = posts;
+            this.authorId = authorId;
         }
+
+        public List<Post> posts { get; set; } = null!;
+
     }
 }

@@ -5,19 +5,17 @@ namespace Slush.Data.Entity.Profile
     public class UserComment : DBRecord
     {
         public String userId { get; set; }
-        public User author { get; set; }
+        public Guid authorId { get; set; }
         public String content { get; set; }
 
-        public UserComment() { }
-
-        public UserComment(Guid id,
-                           User author,
+        public UserComment(String id,
+                           Guid authorId,
                            String content,
                            DateTime createdAt,
                            String userId)
         {
             this.id = id;
-            this.author = author;
+            this.authorId = authorId;
             this.content = content;
             this.createdAt = createdAt;
             this.userId = userId;

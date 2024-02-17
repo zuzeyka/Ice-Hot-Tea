@@ -12,30 +12,15 @@ namespace Slush.Data.Entity.Profile
         public String salt { get;set; }
         public String email { get;set; }
         public String phone { get;set; }
-        public List<OwnedGame> ownedGames { get; set; }
-        public List<WishedGame> wishedGames { get; set; }
-        public List<Friends> friends { get; set; }
-        public List<UserComment> comments { get; set; }
-        public List<Screenshot> screenshots { get; set; }
-        public List<Video> videos { get; set; }
-        public List<Group> groups { get; set; }
-
-        public User() { }
 
 
-        public User(Guid id,
+        public User(String id,
                     String name,
                     String passwordSalt,
                     String email,
                     String phone,
-                    List<OwnedGame> ownedGames,
-                    List<WishedGame> wishedGames,
-                    List<Friends> friends,
                     DateTime createdAt,
-                    String salt,
-                    List<Screenshot> screenshots,
-                    List<Video> videos,
-                    List<Group> groups)
+                    String salt)
         {
             this.id = id;
             this.name = name;
@@ -51,5 +36,14 @@ namespace Slush.Data.Entity.Profile
             this.videos = videos;
             this.groups = groups;
         }
+
+
+        public List<OwnedGame> ownedGames { get; set; }     = null!;
+        public List<WishedGame> wishedGames { get; set; }   = null!;
+        public List<Friends> friends { get; set; }          = null!;
+        public List<UserComment> comments { get; set; }     = null!;
+        public List<Screenshot> screenshots { get; set; }   = null!;
+        public List<Video> videos { get; set; }             = null!;
+        public List<Group> groups { get; set; } = null!;
     }
 }

@@ -5,8 +5,7 @@ namespace Slush.Entity.Store.Product
 {
     public class GameInShop : Game
     {
-        public GameInShop() { }
-        public GameInShop(Guid id,
+        public GameInShop(String id,
                           String name,
                           float price,
                           int discount,
@@ -14,13 +13,8 @@ namespace Slush.Entity.Store.Product
                           DateTime dateOfRelease,
                           String author,
                           String publisher,
-                          List<String> categories,
-                          List<String> gameImages,
-                          List<LanguageInGame> languages,
                           String urlForContent,
-                          DateTime createdAt,
-                          List<String> languagesId,
-                          List<String> systemRequirementsId)
+                          DateTime createdAt)
         {
             this.id = id;
             this.name = name;
@@ -37,5 +31,12 @@ namespace Slush.Entity.Store.Product
             this.urlForContent = urlForContent;
             this.createdAt = createdAt;
         }
+
+
+        List<String> categories { get; set; }           = null!;
+        List<String> gameImages { get; set; }           = null!;
+        List<LanguageInGame> languages { get; set; }    = null!;
+        List<String> languagesId { get; set; }          = null!;
+        List<String> systemRequirementsId { get; set; } = null!;
     }
 }

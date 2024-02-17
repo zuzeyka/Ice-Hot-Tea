@@ -6,9 +6,7 @@ namespace Slush.Data.Entity
     {
         public String gameId { get; set; }
         public String languageId { get; set; }
-
-        public LanguageInGame() { }
-        public LanguageInGame(Guid id,
+        public LanguageInGame(String id,
                               String gameId,
                               String languageId,
                               DateTime createdAt)

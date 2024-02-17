@@ -56,30 +56,7 @@ namespace Slush.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<GameComment>()
-        .HasOne(gc => gc.Author)
-        .WithMany()
-        .HasForeignKey(gc => gc.Author.id);
-
-            modelBuilder.Entity<GameGuide>()
-                .HasOne(gg => gg.gameGroup)
-                .WithMany()
-                .HasForeignKey(gg => gg.gameGroupId);
-
-            modelBuilder.Entity<GameNews>()
-                .HasOne(gn => gn.gameGroup)
-                .WithMany(gg => gg.news)
-                .HasForeignKey(gn => gn.gameGroup.id);
-
-            modelBuilder.Entity<GamePosts>()
-                .HasOne(gp => gp.gameGroup)
-                .WithMany()
-                .HasForeignKey(gp => gp.gameGroup.id);
-
-            modelBuilder.Entity<GameTopic>()
-                .HasMany(gt => gt.posts)
-                .WithOne()
-                .HasForeignKey(gt => gt.gameGroup.id);
+         
         }
     }
 }

@@ -23,17 +23,6 @@ namespace Slush.Controllers
         [HttpPost]
         public IActionResult HandleFormData(string name, string description)
         {
-            var category = new Categories
-            {
-                id = Guid.NewGuid(),
-                name = name,
-                description = description
-            };
-
-            _logger.LogInformation(_dataContext.Database.CanConnect().ToString());
-
-            _dataContext.dbCategories.Add(category);
-            _dataContext.SaveChanges();
             return RedirectToAction("Index");
         }
         public IActionResult Privacy()

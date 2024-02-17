@@ -5,9 +5,7 @@
         public String gameGroupId { get; set; }
         public String content {  get; set; }
 
-        public GameGuide() { }
-
-        public GameGuide(Guid id,
+        public GameGuide(String id,
                          String authorId,
                          String gameId,
                          String discussionId,

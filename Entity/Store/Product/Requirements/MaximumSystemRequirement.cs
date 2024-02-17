@@ -2,8 +2,7 @@
 {
     public class MaximumSystemRequirement : SystemRequirement
     {
-        public MaximumSystemRequirement() { }
-        public MaximumSystemRequirement(Guid id,
+        public MaximumSystemRequirement(String id,
                                         String gameId,
                                         String OS,
                                         String processor,
