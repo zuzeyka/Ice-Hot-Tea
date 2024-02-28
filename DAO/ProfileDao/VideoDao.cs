@@ -12,7 +12,7 @@ namespace Slush.DAO.ProfileDao
             _context = context;
         }
 
-        public List<Video> GetAll()
+        public virtual List<Video> GetAll()
         {
             return _context.dbVideos.ToList();
         }

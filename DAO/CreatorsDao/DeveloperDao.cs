@@ -13,7 +13,7 @@ namespace Slush.DAO.CreatorsDao
             _context = context;
         }
 
-        public List<Developer> GetAll()
+        public virtual List<Developer> GetAll()
         {
             return _context.dbDevelopers.ToList();
         }

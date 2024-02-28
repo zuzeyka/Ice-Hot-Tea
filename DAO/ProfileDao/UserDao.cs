@@ -12,7 +12,7 @@ namespace Slush.DAO.ProfileDao
             _context = context;
         }
 
-        public List<User> GetAll()
+        public virtual List<User> GetAll()
         {
             return _context.dbUsers.ToList();
         }

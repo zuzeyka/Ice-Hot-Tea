@@ -13,7 +13,7 @@ namespace Slush.DAO.ProfileDao
             _context = context;
         }
 
-        public List<Friends> GetAll()
+        public virtual List<Friends> GetAll()
         {
             return _context.dbFriends.ToList();
         }

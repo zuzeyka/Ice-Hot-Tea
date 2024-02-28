@@ -12,7 +12,7 @@ namespace Slush.DAO.ProfileDao
             _context = context;
         }
 
-        public List<OwnedGame> GetAll()
+        public virtual List<OwnedGame> GetAll()
         {
             return _context.dbOwnedGames.ToList();
         }

@@ -12,7 +12,7 @@ namespace Slush.DAO.CategoriesDao
             _context = context;
         }
 
-        public List<CategoryByAuthor> GetAll()
+        public virtual List<CategoryByAuthor> GetAll()
         {
             return _context.dbCategoriesByAuthors.ToList();
         }

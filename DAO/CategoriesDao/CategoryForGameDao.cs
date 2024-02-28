@@ -13,7 +13,7 @@ namespace Slush.DAO.CategoriesDao
             _context = context;
         }
 
-        public List<CategoryForGame> GetAll()
+        public virtual List<CategoryForGame> GetAll()
         {
             return _context.dbCategoriesForGame.ToList();
         }

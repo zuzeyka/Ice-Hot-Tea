@@ -12,7 +12,7 @@ namespace Slush.DAO.RequirementsDao
             _context = context;
         }
 
-        public List<MaximumSystemRequirement> GetAll()
+        public virtual List<MaximumSystemRequirement> GetAll()
         {
             return _context.dbMaximumSystemRequirements.ToList();
         }

@@ -13,7 +13,7 @@ namespace Slush.DAO.GameGroupDao
             _context = context;
         }
 
-        public List<GameComment> GetAll()
+        public virtual List<GameComment> GetAll()
         {
             return _context.dbGameComments.ToList();
         }

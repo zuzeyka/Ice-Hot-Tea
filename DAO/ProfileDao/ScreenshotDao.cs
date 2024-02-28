@@ -13,7 +13,7 @@ namespace Slush.DAO.ProfileDao
             _context = context;
         }
 
-        public List<Screenshot> GetAll()
+        public virtual List<Screenshot> GetAll()
         {
             return _context.dbScreenshots.ToList();
         }

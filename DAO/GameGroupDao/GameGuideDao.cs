@@ -12,7 +12,7 @@ namespace Slush.DAO.GameGroupDao
             _context = context;
         }
 
-        public List<GameGuide> GetAll()
+        public virtual List<GameGuide> GetAll()
         {
             return _context.dbGameGuides.ToList();
         }

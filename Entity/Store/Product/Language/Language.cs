@@ -2,17 +2,11 @@
 
 namespace Slush.Data.Entity
 {
-    public class Language : DBRecord
+    public class Language
     {
+        public String id { get; set; }
         public String name { get; set; }
-
-        public Language(String id,
-                        String name,
-                        DateTime createdAt)
-        {
-            this.id = id;
-            this.name = name;
-            this.createdAt = createdAt;
-        }
+        public DateTime createdAt { get; set; }
+        public DateTime? deleteAt { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace Slush.DAO.GroupDao
             _context = context;
         }
 
-        public List<Group> GetAll()
+        public virtual List<Group> GetAll()
         {
             return _context.dbGroups.ToList();
         }

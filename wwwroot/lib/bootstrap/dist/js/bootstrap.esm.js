@@ -3605,7 +3605,7 @@ class Tooltip extends BaseComponent {
     this._timeout = 0;
     this._hoverState = '';
     this._activeTrigger = {};
-    this._popper = null; // Protected
+    this._popper = null; // public
 
     this._config = this._getConfig(config);
     this.tip = null;
@@ -3822,7 +3822,7 @@ class Tooltip extends BaseComponent {
     if (this._popper !== null) {
       this._popper.update();
     }
-  } // Protected
+  } // public
 
 
   isWithContent() {

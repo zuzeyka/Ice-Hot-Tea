@@ -12,7 +12,7 @@ namespace Slush.DAO.LanguageDao
             _context = context;
         }
 
-        public List<LanguageInGame> GetAll()
+        public virtual List<LanguageInGame> GetAll()
         {
             return _context.dbLanguagesInGame.ToList();
         }

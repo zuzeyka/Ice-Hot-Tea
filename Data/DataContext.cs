@@ -56,7 +56,7 @@ namespace Slush.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-         
+            modelBuilder.Entity<List<object>>().HasNoKey();
         }
     }
 }

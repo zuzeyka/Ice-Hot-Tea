@@ -2,6 +2,6 @@
 {
     public abstract class News : Post
     {
-        public List<String> images { get; set; }
+        public virtual List<String> images { get; set; }
     }
 }

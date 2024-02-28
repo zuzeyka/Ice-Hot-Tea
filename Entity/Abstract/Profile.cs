@@ -6,6 +6,6 @@
         public String description { get; set; }
         public String avatar { get; set; }
         public String backgroundImage { get; set; }
-        public List<object> showcases { get; set; } // изменить тип данных который будет отвечать за показ контента в витрине
+        public virtual List<object> showcases { get; set; } // изменить тип данных который будет отвечать за показ контента в витрине
     }
 }
