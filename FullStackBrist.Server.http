@@ -1,0 +1,6 @@
+@FullStackBrist.Server_HostAddress = http://localhost:5221
+
+GET {{FullStackBrist.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
