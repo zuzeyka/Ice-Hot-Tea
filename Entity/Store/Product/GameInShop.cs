@@ -3,38 +3,24 @@ using Slush.Entity.Abstract;
 
 namespace Slush.Entity.Store.Product
 {
-    public class GameInShop : Game
+    public class GameInShop
     {
-        public GameInShop(String id,
-                          String name,
-                          float price,
-                          int discount,
-                          String image,
-                          DateTime dateOfRelease,
-                          String author,
-                          String publisher,
-                          List<String> categories,
-                          List<String> gameImages,
-                          List<LanguageInGame> languages,
-                          String urlForContent,
-                          DateTime createdAt,
-                          List<String> languagesId,
-                          List<String> systemRequirementsId)
-        {
-            this.id = id;
-            this.name = name;
-            this.price = price;
-            this.discount = discount;
-            this.gameImages = gameImages;
-            this.previeImage = image;
-            this.dateOfRelease = dateOfRelease;
-            this.languagesId = languagesId;
-            this.developerId = author;
-            this.publisherId = publisher;
-            this.categoriesId = categories;
-            this.systemRequirementsId = systemRequirementsId;
-            this.urlForContent = urlForContent;
-            this.createdAt = createdAt;
-        }
+        public String id { get; set; }
+        public String name { get; set; }
+        public float price { get; set; }
+        public int discount { get; set; }
+        public String previeImage { get; set; }
+        public DateTime dateOfRelease { get; set; }
+        public String developerId { get; set; }
+        public String publisherId { get; set; }
+        public String urlForContent { get; set; }
+        public DateTime createdAt { get; set; }
+        public DateTime? deleteAt { get; set; }
+
+        public virtual List<String> categoriesId { get; set; }           = null!;
+        public virtual List<String> gameImages { get; set; }           = null!;
+        public virtual List<LanguageInGame> languages { get; set; }    = null!;
+        public virtual List<String> languagesId { get; set; }          = null!;
+        public virtual List<String> systemRequirementsId { get; set; } = null!;
     }
 }

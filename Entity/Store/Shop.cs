@@ -6,7 +6,7 @@ namespace Slush.Entity.Store
 {
     public class Shop
     {
-        public List<Game> popularGames {  get; set; }
-        public List<Publisher> popularPublishers { get; set; }
+        public virtual List<Game> popularGames {  get; set; }           = null!;
+        public virtual List<Publisher> popularPublishers { get; set; } = null!;
     }
 }

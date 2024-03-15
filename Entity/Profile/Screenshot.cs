@@ -2,31 +2,18 @@
 
 namespace Slush.Data.Entity.Profile
 {
-    public class Screenshot : Post
+    public class Screenshot
     {
+        public String id { get; set; }
+        public String title { get; set; }
+        public String? description { get; set; }
+        public int likesCount { get; set; }
+        public int dislikesCount { get; set; }
+        public String discussionId { get; set; }
+        public String gameId { get; set; }
+        public String authorId { get; set; }
         public String screenshotUrl { get; set; }
-
-        public Screenshot(String id,
-                         String authorId,
-                         String gameId,
-                         String discussionId,
-                         int dislikesCount,
-                         int likesCount,
-                         String? description,
-                         String screenshotUrl,
-                         String title,
-                         DateTime createdAt)
-        {
-            this.id = id;
-            this.likesCount = likesCount;
-            this.gameId = gameId;
-            this.authorId = authorId;
-            this.screenshotUrl = screenshotUrl;
-            this.discussionId = discussionId;
-            this.dislikesCount = dislikesCount;
-            this.description = description;
-            this.title = title;
-            this.createdAt = createdAt;
-        }
+        public DateTime createdAt { get; set; }
+        public DateTime? deleteAt { get; set; }
     }
 }

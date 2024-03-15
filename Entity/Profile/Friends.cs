@@ -6,13 +6,7 @@
         public String userId { get; set; }
         public String friendId { get; set; }
 
-        public Friends(String id,
-                       String userId,
-                       String friendId)
-        {
-            this.id = id;
-            this.userId = userId;
-            this.friendId = friendId;
-        }
+        public DateTime createdAt { get; set; }
+        public DateTime? deleteAt { get; set; }
     }
 }

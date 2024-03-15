@@ -4,6 +4,6 @@ namespace Slush.Entity.Forum
 {
     public class Forum
     {
-        public List<Post> forumFeed {  get; set; }
+        public virtual List<Post> forumFeed {  get; set; }
     }
 }

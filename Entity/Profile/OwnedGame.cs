@@ -2,17 +2,12 @@
 
 namespace Slush.Entity.Profile
 {
-    public class OwnedGame : ProfileGame
+    public class OwnedGame
     {
-        public OwnedGame(string id,
-                         string ownedGameId,
-                         string userId,
-                         DateTime createdAt)
-        {
-            this.id = id;
-            this.ownedGameId = ownedGameId;
-            this.userId = userId;
-            this.createdAt = createdAt;
-        }
+        public String id { get; set; }
+        public String ownedGameId { get; set; }
+        public String userId { get; set; }
+        public DateTime createdAt { get; set; }
+        public DateTime? deleteAt { get; set; }
     }
 }
